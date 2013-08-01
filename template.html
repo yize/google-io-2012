@@ -9,408 +9,413 @@ URL: https://code.google.com/p/io-2012-slides
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <!--This one seems to work all the time, but really small on ipad-->
-  <!--<meta name="viewport" content="initial-scale=0.4">-->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" media="all" href="theme/css/default.css">
-  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
-  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--This one seems to work all the time, but really small on ipad-->
+    <!--<meta name="viewport" content="initial-scale=0.4">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" media="all" href="theme/css/default.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+    <base target="_blank">
+    <!-- This amazingness opens all links in a new tab. -->
+    <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
 </head>
 <body style="opacity: 0">
 
 <slides class="layout-widescreen">
 
-  <slide class="logoslide nobackground">
+<slide class="logoslide nobackground">
     <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo.png"></span>
+        <span><img src="images/google_developers_logo.png"></span>
     </article>
-  </slide>
+</slide>
 
-  <slide class="title-slide segue nobackground">
+<slide class="title-slide segue nobackground">
     <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
     <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
-      <h1 data-config-title><!-- populated from slide_config.json --></h1>
-      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
-      <p data-config-presenter><!-- populated from slide_config.json --></p>
-    </hgroup>
-  </slide>
+        <h1 data-config-title><!-- populated from slide_config.json --></h1>
 
-  <slide>
+        <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+
+        <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+</slide>
+
+<slide>
     <hgroup>
-      <h2>Slide with Bullets</h2>
+        <h2>Connect是什么？</h2>
     </hgroup>
     <article>
-      <ul>
-        <li>Titles are formatted as Open Sans with bold applied and font size is set at 45</li>
-        <li>Title capitalization is title case
-          <ul>
-            <li>Subtitle capitalization is title case</li>
-          </ul>
-        </li>
-        <li>Subtitle capitalization is title case</li>
-        <li>Titles and subtitles should never have a period at the end</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>A list where items build:</p>
-      <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
-      </ul>
-      <p>Another list, but items fade as they build:</p>
-      <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <ul>
-        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide hidden>
-    Hidden slides are left out of the presentation.
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
-  }
-&lt;/script&gt;
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <pre class="prettyprint" data-lang="javascript">
-// Say hello world until the user starts questioning
-// the meaningfulness of their existence.
-function helloWorld(world) {
-  for (var i = 42; --i &gt;= 0;) {
-    alert('Hello ' + String(world));
-  }
-}
-</pre>
-<pre class="prettyprint" data-lang="css">
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-&lt;/style&gt;
-</pre>
-<pre class="prettyprint" data-lang="html">
-&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-  &lt;title>My Awesome Page&lt;/title>
-&lt;/head>
-&lt;body>
-  &lt;p&gt;Hello world&lt;/p&gt;
-&lt;body>
-&lt;/html>
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>Point I wanted to make #1</li>
-          <li>Point I wanted to make #2</li>
-          <li>Point I wanted to make #3</li>
-          <li>Example <a href="#">link</a> in notes.</li>
+        <p>它是什么？</p>
+        <ul class="build">
+            <li>
+                它是Node的一个中间件框架
+            </li>
+            <li>
+                <del>18</del>22个捆绑的中间件和一些精选第三方中间件
+            </li>
         </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Slide with Speaker Notes</h2>
-    </hgroup>
-    <article>
-      <p>Press 'p' to toggle speaker notes.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>See this amazing link: <a href="http://www.google.com">link</a>.</li>
+        <p>特点：</p>
+        <ul class="build">
+            <li>模型简单</li>
+            <li>中间件易于组合和插拔</li>
+            <li>中间件易于定制和优化</li>
+            <li>丰富的中间件</li>
         </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
+    </article>
+</slide>
+<slide>
     <hgroup>
-      <h2>Presenter Mode</h2>
+        <h2></h2>
     </hgroup>
     <article>
-      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
-      This setting is sticky, meaning refreshing the page will persist presenter
-      mode.</p>
-      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
+        <p>让我们先来看一个最简单的Web服务器的代码</p>
     </article>
-  </slide>
+    <pre class="prettyprint" data-lang="javascript">
+        var http = require('http');
+        http.createServer(function (req, res) {
+            //在这里我们可以做很多事情
+            res.writeHead(200, {'Content-Type': 'text/plain'});
+            res.end('Hello World\n');
+        }).listen(1337, '127.0.0.1');
+        console.log('Server running at http://127.0.0.1:1337/');
+    </pre>
+        <p>HTTP模块处理网络访问有两个重要的因素</p>
+        <p>请求和响应</p>
+        <p>connect的中间件做的就是处理请求</p><br>
+        <p>让下一个中间件继续处理</p>
+        <p>或者响应客户端</p>
+</slide>
 
-  <slide>
+<slide>
     <hgroup>
-      <h2>Slide with Image</h2>
+        <h2>中间件</h2>
     </hgroup>
     <article>
-      <img src="images/chart.png" class="reflect" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
+        <pre class="prettyprint" data-lang="javascript">
+            /**
+             *
+             * @param req 请求对象
+             * @param res 响应对象
+             * @param next 下一个中间件
+             */
+            function (req, res, next) {
+                // 中间件
+            }
+        </pre>
+        <p>中间件一般不会调用res.end()方法</p>
     </article>
-  </slide>
+</slide>
 
-  <slide>
+<slide>
     <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
-    </hgroup>
-    <article class="flexbox vcenter">
-      <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
+        <h2>流式处理</h2>
     </hgroup>
     <article>
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
+        <pre class="prettyprint" data-lang="javascript">
+            var connect = require('connect');
+            var app = connect();
+            // 中间件队列
+            app.use(connect.staticCache());
+            app.use(connect.static(__dirname + '/public'));
+            app.use(connect.cookieParser());
+            app.use(connect.session());
+            app.use(connect.query());
+            app.use(connect.bodyParser());
+            app.use(connect.csrf());
+            app.use(function (req, res, next) {
+                // 中间件
+            });
+            app.listen(3030);
+        </pre>
+        <p>Conncet提供use方法用于注册中间件到一个Connect对象的队列中，我们称该队列叫做中间件队列。</p>
     </article>
-  </slide>
+</slide>
 
-  <slide>
+<slide>
     <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
+        <h2>Connect:use</h2>
     </hgroup>
+    <article>
+        <pre class="prettyprint" data-lang="javascript">
+            app.stack = [];
+            app.use = function(route, fn){
+              // …
+
+              // add the middleware
+              debug('use %s %s', route || '/', fn.name || 'anonymous');
+              this.stack.push({ route: route, handle: fn });
+
+              return this;
+            };
+        </pre>
+    </article>
+</slide>
+
+<slide>
+    <hgroup>
+        <h2>Connect:use</h2>
+    </hgroup>
+    <article>
+        <pre class="prettyprint" data-lang="javascript">
+            app.use = function(route, fn){
+                //默认路径是'/'
+                if ('string' != typeof route) {
+                    fn = route;
+                    route = '/';
+                }
+
+                // wrap sub-apps
+                if ('function' == typeof fn.handle) {
+                    var server = fn;
+                    fn.route = route;
+                    fn = function(req, res, next){
+                      server.handle(req, res, next);
+                    };
+                }
+            ...
+            }
+        </pre>
+    </article>
+</slide>
+
+<slide>
+    <hgroup>
+        <h2>路由</h2>
+    </hgroup>
+    <article>
+        <ul>
+            <li>app.use方法默认接收两个参数：route和fn，如果route没有传入的话，默认是'/'</li>
+            <li>路由信息的作用是过滤不匹配的URL</li>
+            <li>请求在遇见路由信息不匹配时，直接传递给下一个中间件处理。</li>
+            <li>建议指定route，减少性能损耗</li>
+        </ul>
+    </article>
+</slide>
+
+<slide>
     <article class="smaller">
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <table class="rows">
-        <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide Styles</h2>
-    </hgroup>
-    <article class="smaller">
-      <div class="columns-2">
         <ul>
-          <li class="red">class="red"</li>
-          <li class="red2">class="red2"</li>
-          <li class="red3">class="red3"</li>
-          <li class="blue">class="blue"</li>
-          <li class="blue2">class="blue2"</li>
-          <li class="blue3">class="blue3"</li>
-          <li class="green">class="green"</li>
-          <li class="green2">class="green2"</li>
+            <ul>
+                <li><a href="http://www.senchalabs.org/connect/logger.html">logger</a> request logger with custom format support</li>
+                <li><a href="http://www.senchalabs.org/connect/csrf.html">csrf</a> Cross-site request forgery protection</li>
+                <li><a href="http://www.senchalabs.org/connect/compress.html">compress</a> Gzip compression middleware</li>
+                <li><a href="http://www.senchalabs.org/connect/basicAuth.html">basicAuth</a> basic http authentication</li>
+                <li><a href="http://www.senchalabs.org/connect/bodyParser.html">bodyParser</a> extensible request body parser</li>
+                <li><a href="http://www.senchalabs.org/connect/json.html">json</a> application/json parser</li>
+                <li><a href="http://www.senchalabs.org/connect/urlencoded.html">urlencoded</a> application/x-www-form-urlencoded parser</li>
+                <li><a href="http://www.senchalabs.org/connect/multipart.html">multipart</a> multipart/form-data parser</li>
+                <li><a href="http://www.senchalabs.org/connect/timeout.html">timeout</a> request timeouts</li>
+                <li><a href="http://www.senchalabs.org/connect/cookieParser.html">cookieParser</a> cookie parser</li>
+                <li><a href="http://www.senchalabs.org/connect/session.html">session</a> session management support with bundled MemoryStore</li>
+                <li><a href="http://www.senchalabs.org/connect/cookieSession.html">cookieSession</a> cookie-based session support</li>
+                <li><a href="http://www.senchalabs.org/connect/methodOverride.html">methodOverride</a> faux HTTP method support</li>
+                <li><a href="http://www.senchalabs.org/connect/responseTime.html">responseTime</a> calculates response-time and exposes via X-Response-Time</li>
+                <li><a href="http://www.senchalabs.org/connect/staticCache.html">staticCache</a> memory cache layer for the static() middleware</li>
+                <li><a href="http://www.senchalabs.org/connect/static.html">static</a> streaming static file server supporting <code>Range</code> and more</li>
+                <li><a href="http://www.senchalabs.org/connect/directory.html">directory</a> directory listing middleware</li>
+                <li><a href="http://www.senchalabs.org/connect/vhost.html">vhost</a> virtual host sub-domain mapping middleware</li>
+                <li><a href="http://www.senchalabs.org/connect/favicon.html">favicon</a> efficient favicon server (with default icon)</li>
+                <li><a href="http://www.senchalabs.org/connect/limit.html">limit</a> limit the bytesize of request bodies</li>
+                <li><a href="http://www.senchalabs.org/connect/query.html">query</a> automatic querystring parser, populating <code>req.query</code></li>
+                <li><a href="http://www.senchalabs.org/connect/errorHandler.html">errorHandler</a> flexible error handler</li>
+            </ul>
         </ul>
+    </article>
+</slide>
+
+<slide>
+    <hgroup>
+        <h2>static</h2>
+    </hgroup>
+    <article>
+        <pre class="prettyprint" data-lang="javascript">
+        var oneDay = 86400000;
+
+        connect()
+        .use(connect.static(__dirname + '/public'))
+
+        connect()
+        .use(connect.static(__dirname + '/public', { maxAge: oneDay }))
+        </pre>
+        <p>静态文件放在一个目录，这样就可以通过/static/去找到静态文件</p>
+    </article>
+</slide>
+
+<slide>
+	<hgroup><h2>CONNECT API</h2></hgroup>
+	<article>
+		<iframe data-src="http://www.senchalabs.org/connect/"></iframe>
+	</article>
+</slide>
+
+<slide hidden>
+	<hgroup>
+		<h2>logger</h2>
+	</hgroup>
+	<article>
+        <pre class="prettyprint" data-lang="javascript">
+		connect()
+			.use(connect.logger())
+			.listen(3000);
+        </pre>
+		<p>静态文件放在一个目录，这样就可以通过/static/去找到静态文件</p>
+	</article>
+</slide>
+
+<slide hidden>
+	<hgroup>
+		<h2>logger</h2>
+	</hgroup>
+	<article>
+        <pre class="prettyprint" data-lang="javascript">
+		var app = connect()
+			.use(connect.logger())
+			.listen(3000);
+        </pre>
+		<p>fast</p>
+		<pre class='prettyprint' data-lang="javascript">
+		connect()
+			.use(connect.logger({buffer:5000}))
+			.use(connect.favicon())
+			.listen(3000);
+		</pre>
+		<code>buffer</code>:缓冲周期
+	</article>
+</slide>
+
+<slide hidden>
+	<hgroup>
+		<h2>logger format</h2>
+	</hgroup>
+	<article>
+        <pre class="prettyprint" data-lang="javascript">
+		connect()
+		.use(connect.logger(':method :url - :res[content-type]'))
+		.use(function(req,res){
+			res.statusCode = 500;
+			res.setHeader('Content-Type', 'text/plain');
+			res.end('Internal Server Error');
+		})
+		.listen(3000)
+        </pre>
+	</article>
+</slide>
+
+<slide hidden>
+    <hgroup>
+        <h2>Query</h2>
+    </hgroup>
+    <article>
+        <pre class="prettyprint" data-lang="javascript">
+            connect()
+            .use(connect.query())
+            .use(function(req, res){
+                res.end(JSON.stringify(req.query));
+            });
+        </pre>
+    </article>
+</slide>
+
+<slide>
+    <hgroup>
+        <h2>nodejsmodule.org</h2>
+    </hgroup>
+    <article>
+        <iframe data-src="https://nodejsmodules.org/"></iframe>
+    </article>
+</slide>
+
+<slide class="fill nobackground" style="background-image: url(images/pai.jpg)">
+    <hgroup>
+        <h2 class="white">要做一个应用，感觉用connect还是有点复杂，怎么办</h2>
+    </hgroup>
+</slide>
+<slide class="fill nobackground" style="background-image: url(images/pai2.jpg)">
+    <hgroup>
+        <h2 class="white">新大陆！！</h2>
+    </hgroup>
+</slide>
+
+<slide>
+    <hgroup>
+        <h2>Express</h2>
+    </hgroup>
+    <article>
+        <pre class="prettyprint" data-lang="javascript">
+            var express = require('express');
+            var app = express();
+
+            app.get('/', function(req, res){
+              res.send('Hello World');
+            });
+
+            app.listen(3000);
+        </pre>
+    </article>
+</slide>
+
+<slide>
+    <hgroup>
+        <h2>特点</h2>
+    </hgroup>
+    <article>
         <ul>
-          <li class="green3">class="green3"</li>
-          <li class="yellow">class="yellow"</li>
-          <li class="yellow2">class="yellow2"</li>
-          <li class="yellow3">class="yellow3"</li>
-          <li class="gray">class="gray"</li>
-          <li class="gray2">class="gray2"</li>
-          <li class="gray3">class="gray3"</li>
-          <li class="gray4">class="gray4"</li>
+            <li>基于Connect</li>
+            <li>强大的路由</li>
+            <li>HTTP插件(重定向、缓存等)</li>
+            <li>View层支持14种以上的模版引擎</li>
+            <li>基于Connect</li>
         </ul>
-      </div>
-      <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
-      </div>
+	    <p><a href="http://expressjs.com/">express</a></p>
+	    <p><a href="http://expressjs.jser.us/">express中文文档</a></p>
     </article>
-  </slide>
+</slide>
 
-  <slide class="segue dark nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
-    <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
-    </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
-  </slide>
-
-  <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/google_developers_icon_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <q>
-        This is an example of quote text.
-      </q>
-      <div class="author">
-        Name<br>
-        Company
-      </div>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Iframe</h2>
-    </hgroup>
-    <article>
-      <iframe data-src="http://www.google.com/doodle4google/history.html"></iframe>
-    </article>
-  </slide>
-
-  <slide>
-    <article>
-      <iframe data-src="http://www.google.com/doodle4google/history.html"></iframe>
-    </article>
-  </slide>
-
-  <slide class="thank-you-slide segue nobackground">
+<slide class="thank-you-slide segue nobackground">
     <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
     <article class="flexbox vleft auto-fadein">
-      <h2>&lt;Thank You!&gt;</h2>
-      <p>Important contact information goes here.</p>
+        <h2>&lt;Thank You!&gt;</h2>
+
+        <p>yize.shc@gmail.com.</p>
     </article>
     <p class="auto-fadein" data-config-contact>
-      <!-- populated from slide_config.json -->
+        <!-- populated from slide_config.json -->
     </p>
-  </slide>
+</slide>
 
-  <slide class="logoslide dark nobackground">
+<slide class="logoslide dark nobackground">
     <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo_white.png"></span>
+        <span><img src="images/google_developers_logo_white.png"></span>
     </article>
-  </slide>
+</slide>
 
-  <slide class="backdrop"></slide>
+<slide class="backdrop"></slide>
 
 </slides>
 
 <script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
-_gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+    _gaq.push(['_trackPageview']);
 
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 
 <!--[if IE]>
-  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
-  <script>CFInstall.check({mode: 'overlay'});</script>
+<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+<script>CFInstall.check({mode: 'overlay'});</script>
 <![endif]-->
 </body>
 </html>
